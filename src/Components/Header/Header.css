@@ -1,0 +1,71 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.NavBar {
+    height: 6rem;
+    background: var(--header-text-black);
+}
+
+.NavBar .NavItems .logo img {
+    width: 140px;
+    height: 100%;
+    position: relative;
+    top: -20px;
+}
+
+.NavBar .NavItems .NavMenu {
+    float: right;
+    margin-bottom: 0px;
+}
+
+.NavBar .NavItems .NavMenu li {
+    display: inline-block;
+    margin: 0px 30px;
+    line-height: 90px;
+}
+
+.NavBar .NavItems .NavMenu li .NavMenuList {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.NavBar .NavItems .NavMenu li .NavMenuLists {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.NavBar .NavItems .NavMenu li .NavMenuList:hover {
+    color: var(--red);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.NavBar .NavItems .NavMenu .ReachUs {
+    color: var(--white);
+    padding: 0.8rem 3rem;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: var(--red);
+}
+
+
+/***************MEDIA QUERY START******************/
+
+@media (max-width:991px) {
+    .NavBar .NavItems .NavMenu {
+        float: none;
+    }
+}
