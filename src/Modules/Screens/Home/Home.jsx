@@ -1,6 +1,6 @@
 import './Home.css';
 import { useRef, useState } from 'react';
-import heroBannerVideo from '../../../assets/Videos/HeroBanner2.mp4';
+import heroBannerVideo from '../../../assets/Videos/HeroBanner3.mp4';
 import about from '../../../assets/Images/about.gif';
 import ServicesCard from './services-card/ServicesCard';
 import CompanyWork from './company-work/CompanyWork';
@@ -121,7 +121,7 @@ const Home = () => {
           <div className='mb-5'>
             {
               data.map((elm, id) => {
-                return <FAQ key={id} {...elm} setSelectedID={setSelectedID} selectedID={selectedID}/>
+                return <FAQ key={id} {...elm} setSelectedID={setSelectedID} selectedID={selectedID} />
               })
             }
           </div>
