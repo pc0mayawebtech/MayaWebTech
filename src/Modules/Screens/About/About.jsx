@@ -20,7 +20,7 @@ const About = () => {
           </div>
           <div>
             <p className='abtCompany'>
-              Welcome to Digital Molecule, your trusted partner in Delhi, India since 2012 (Earlier Known as VaMedia Box Pvt Ltd). With 13 years of dedication, we empower businesses through services like Digital Marketing, Website Development, Mobile App Development, Website Maintenance, and Graphic Design. Join us on a journey to transform your brands digital presence. Digital Molecule is more than a service; it's an experience, a shared journey towards your goals. Join us as we blend creativity, technology, and strategy to create a unique digital narrative. Welcome to a partnership that exceeds expectations, guiding your brand toward digital success.
+              Welcome to Digital Molecule, your trusted partner in Delhi, India since 2012 (Earlier Known as VaMedia Box Pvt Ltd). With 13 years of dedication, we empower businesses through services like Digital Marketing, Website Development, Mobile App Development, Website Maintenance, and Graphic Design. Join us on a journey to transform your brands digital presence. Digital Molecule is more than a service; its an experience, a shared journey towards your goals. Join us as we blend creativity, technology, and strategy to create a unique digital narrative. Welcome to a partnership that exceeds expectations, guiding your brand toward digital success.
             </p>
           </div>
         </div>
