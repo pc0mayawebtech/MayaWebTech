@@ -4,4 +4,11 @@
     --box-bg-color: #353535;
     --header-text-black: #2f3534;
     --para-text-color: #2B2B2B;
+    --card-head-color: #000000d2;
+    --card-para-color: #5E5E5E;
+    --black:#000000f6;
+}
+
+.slick-slide>div {
+    margin: 0px 10px;
 }

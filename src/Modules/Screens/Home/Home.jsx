@@ -1,5 +1,5 @@
 import './Home.css';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import heroBannerVideo from '../../../assets/Videos/HeroBanner2.mp4';
 import about from '../../../assets/Images/about.gif';
 import ServicesCard from './services-card/ServicesCard';
@@ -8,7 +8,13 @@ import client from '../../../assets/Images/clients1.png';
 import project from '../../../assets/Images/projects.png';
 import support from '../../../assets/Images/support.png';
 import hardWork from '../../../assets/Images/team-member.png';
+import Testinomial from '../Home/Testinomial/Testinomial';
+import FAQ from '../Home/FAQ/FAQ';
+import { questions } from '../Home/FAQ/api.js';
 const Home = () => {
+  // eslint-disable-next-line no-unused-vars
+  const [data, setData] = useState(questions);
+  const [selectedID, setSelectedID] = useState()
   const videoRef = useRef();
 
   const setPlayBack = () => {
@@ -89,18 +95,35 @@ const Home = () => {
         </div>
       </section>
 
-      <section className='Testinomials mt-5'>
+      <section className='Testinomials mt-5 pb-5'>
         <div className="container">
-          <div className='row'>
-            <div className="col-lg-6 pt-5">
-              <div>
-                <h2 className='text-white'>Read What Our Clients Say
-                  About Us!
-                </h2>
-                <p className='text-white'>Client feedback motivates us to do more, be more, and accomplish more. We are able to perform even better thanks to our clients, their complimentary comments, and our desire for shared success.</p>
-              </div>
+          <div>
+            <div>
+              <h2 className='testinomialleftHead'>Read What Our Clients Say
+                About Us!
+              </h2>
+              <span className='Textdecorate d-block m-auto mb-3'></span>
+              <p className='testinomialleftCont'>Client feedback motivates us to do more, be more, and accomplish more. We are able to perform even better thanks to our clients, their complimentary comments, and our desire for shared success.</p>
             </div>
-            <div className="col-lg-6"></div>
+          </div>
+          <div className='mt-5'>
+            <Testinomial />
+          </div>
+        </div>
+      </section>
+
+      <section className='FAQ'>
+        <div className="container">
+          <div className='FAQBox'>
+            <h2 className='FaqHead'>FAQ</h2>
+            <span className='Textdecorate m-auto'></span>
+          </div>
+          <div className='mb-5'>
+            {
+              data.map((elm, id) => {
+                return <FAQ key={id} {...elm} setSelectedID={setSelectedID} selectedID={selectedID}/>
+              })
+            }
           </div>
         </div>
       </section>
