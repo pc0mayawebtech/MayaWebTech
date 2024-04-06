@@ -25,6 +25,16 @@
     margin-bottom: 1.2rem;
 }
 
+.FormInput select {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0.6rem 0.9rem;
+    box-shadow: 0px 1px 2px 1px #5f5e5e38;
+    border-radius: 6px;
+    margin-bottom: 1.2rem;
+}
+
 .FormInput input[type="tel"] {
     width: 100%;
     border: none;
@@ -55,4 +65,11 @@
     border-radius: 6px;
     font-size: 1.1rem;
     font-weight: 700;
+}
+
+.FormInput .formError {
+    color: var(--red);
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
 }

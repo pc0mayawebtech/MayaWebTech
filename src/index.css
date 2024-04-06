@@ -6,7 +6,8 @@
     --para-text-color: #2B2B2B;
     --card-head-color: #000000d2;
     --card-para-color: #5E5E5E;
-    --black:#000000f6;
+    --black: #000000f6;
+    --banner-bg-color: #0b0c26;
 }
 
 .slick-slide>div {

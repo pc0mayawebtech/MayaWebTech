@@ -6,12 +6,12 @@ import client from '../../../assets/Images/clients1.png';
 import project from '../../../assets/Images/projects.png';
 import support from '../../../assets/Images/support.png';
 import hardWork from '../../../assets/Images/team-member.png';
-import Form from './Form/Form';
-import Contact from '../../../assets/Images/mayaContactUs.jpg';
+import WorkProcess from './WorkProcess/WorkProcess';
+import { Link } from 'react-router-dom';
 const About = () => {
   return (
     <>
-      <section className='BannerBox mb-5'>
+      <section className='BannerBox'>
         <div className='InnerBanner'>
           <div className="row">
             <div className="col-lg-12">
@@ -98,80 +98,28 @@ const About = () => {
           </div>
 
           {/* 2nd Row Start */}
-
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="row ttm-processbox-wrapper">
-                <div className="col-lg-4">
-                  <div className='ttm-processbox'>
-                    <div className='ttm-box-image'>
-                      <div className='process-num'>
-                        <span className='number'>01</span>
-                      </div>
-                    </div>
-                    <div className='featured-content'>
-                      <div className='featured-title'>
-                        <h5>Reserach Project</h5>
-                      </div>
-                      <div className='ttm-box-description'>
-                        Find Sources, Evaluate Sources, Establish a Working
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4">
-                  <div className='ttm-processbox'>
-                    <div className='ttm-box-image'>
-                      <div className='process-num'>
-                        <span className='number'>01</span>
-                      </div>
-                    </div>
-                    <div className='featured-content'>
-                      <div className='featured-title'>
-                        <h5>Reserach Project</h5>
-                      </div>
-                      <div className='ttm-box-description'>
-                        Find Sources, Evaluate Sources, Establish a Working
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4">
-                  <div className='ttm-processbox'>
-                    <div className='ttm-box-image'>
-                      <div className='process-num'>
-                        <span className='number'>01</span>
-                      </div>
-                    </div>
-                    <div className='featured-content'>
-                      <div className='featured-title'>
-                        <h5>Reserach Project</h5>
-                      </div>
-                      <div className='ttm-box-description'>
-                        Find Sources, Evaluate Sources, Establish a Working
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <WorkProcess />
         </div>
       </section>
 
-      <section className='ContactForm mb-5'>
+      <section className='ReachOutUs ConnectBusiness'>
+        <div className='rBuisness-layer'></div>
         <div className="container">
           <div className="row">
-            <div className="col-xxl-6 col-lg-6">
-              <div className='ContactTouch'>
-                <h2 className='TalkUs'>Let Us talk</h2>
-                <p className='ReachUs'>Please fill out the form or email at mayaweb@gmail.com</p>
-                <img src={Contact} alt="Contact" className='w-100' />
+            <div className="col-lg-2"></div>
+            <div className="col-lg-8">
+              <div className='InnerContactData'>
+                <p className='InnerCont'>WE MAKE A DIFFERENCE</p>
+                <h2 className='InnerHead'>Are You Ready For Successfull Business With Us?</h2>
+                <p className='abtbusineeslayer'>Domain Names Services with competitive prices.Hosting is like the intermediate between the website.Today’s world is the world innovation and creativity. Graphic Design is the combination of creativity, technical knowledge, and research skills.</p>
+              </div>
+              <div>
+                <button className='Connectbtn'>
+                  <Link to="tel:+919824620234" inputMode='numeric' className='innerContact'>Contact Me</Link>
+                </button>
               </div>
             </div>
-            <div className="col-xxl-6 col-lg-6">
-              <Form />
-            </div>
+            <div className="col-lg-2"></div>
           </div>
         </div>
       </section>

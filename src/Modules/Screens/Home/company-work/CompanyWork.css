@@ -13,18 +13,6 @@
     animation: popUp 2s infinite alternate;
 }
 
-@keyframes popUp {
-
-    0%,
-    100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(0.9);
-    }
-}
-
 .BoxBlock:hover {
     background: linear-gradient(150deg, #cc6060, transparent);
     color: var(--white) !important;

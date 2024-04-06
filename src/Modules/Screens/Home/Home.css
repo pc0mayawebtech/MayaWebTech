@@ -112,6 +112,8 @@
 
 .FAQ .FAQBox .FaqHead {
     text-align: center;
+    color: var(--red);
+    font-weight: 600;
 
 }
 
