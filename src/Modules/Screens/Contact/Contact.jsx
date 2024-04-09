@@ -1,8 +1,12 @@
+import { useEffect } from 'react';
 import './Contact.css';
 import ContactLogo from '../../../assets/Images/mayaContactUs.jpg';
 import Form from './Form/Form';
 import EnquiryCard from './EnquiryCard/EnquiryCard';
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+})
   return (
     <>
       <section className='contactWrapper'>

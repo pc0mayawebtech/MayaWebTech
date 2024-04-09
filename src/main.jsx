@@ -8,8 +8,11 @@ import Home from './Modules/Screens/Home/Home.jsx';
 import About from './Modules/Screens/About/About.jsx';
 import Service from './Modules/Screens/Service/Service.jsx';
 import Contact from './Modules/Screens/Contact/Contact.jsx';
-import Work from './Modules/Screens/Work/Work.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import RefundPolicy from './Components/Footer/RefundPolicy/RefundPolicy.jsx';
+import PrivacyPolicy from './Components/Footer/PrivacyPolicy/PrivacyPolicy.jsx';
+import TermCondition from './Components/Footer/TermsCondition/TermCondition.jsx';
+import Disclaimer from './Components/Footer/Disclaimer/Disclaimer.jsx';
 
 const router = createBrowserRouter([
   {
@@ -29,12 +32,24 @@ const router = createBrowserRouter([
         element: <About />
       },
       {
-        path: "work",
-        element: <Work />
-      },
-      {
         path: "contact",
         element: <Contact />
+      },
+      {
+        path: "refundpolicy",
+        element: <RefundPolicy />
+      },
+      {
+        path: "privacypolicy",
+        element: <PrivacyPolicy/>
+      },
+      {
+        path: "term-condition",
+        element: <TermCondition/>
+      },
+      {
+        path: "disclaimer",
+        element: <Disclaimer/>
       },
     ]
   },

@@ -63,12 +63,12 @@
 }
 
 .Technology .tools_list .tools_list-item.item-1 {
-    background-color: var(--red);
+    background: linear-gradient(150deg, #cc6060, transparent);
     border-radius: 10px;
 }
 
 .Technology .tools_list .tools_list-item.item-1:hover {
-    background: linear-gradient(150deg, #cc6060, transparent);
+    background: var(--red);
     cursor: pointer;
     transform: translateY(-10px);
     transition: all 0.6s ease-in-out;
@@ -133,7 +133,7 @@
 }
 
 .Technology .tools_list .tools_list-item.item-5 {
-    background-color: var(--red);
+    background: linear-gradient(150deg, #cc6060, transparent);
     border-radius: 10px;
 }
 
@@ -142,7 +142,7 @@
 }
 
 .Technology .tools_list .tools_list-item.item-5:hover {
-    background: linear-gradient(150deg, #cc6060, transparent);
+    background: var(--red);
     cursor: pointer;
     transform: translateY(10px);
     transition: all 0.6s ease-in-out;
@@ -154,12 +154,12 @@
 }
 
 .Technology .tools_list .tools_list-item.item-2 {
-    background-color: var(--red);
+    background: linear-gradient(150deg, #cc6060, transparent);
     border-radius: 10px;
 }
 
 .Technology .tools_list .tools_list-item.item-2:hover {
-    background: linear-gradient(150deg, #cc6060, transparent);
+    background: var(--red);
     cursor: pointer;
     transform: translateY(10px);
     transition: all 0.6s ease-in-out;
@@ -170,12 +170,12 @@
 }
 
 .Technology .tools_list .tools_list-item.item-3 {
-    background-color: var(--red);
+    background: linear-gradient(150deg, #cc6060, transparent);
     border-radius: 10px;
 }
 
 .Technology .tools_list .tools_list-item.item-3:hover {
-    background: linear-gradient(150deg, #cc6060, transparent);
+    background: var(--red);
     cursor: pointer;
     transform: translateY(10px);
     transition: all 0.6s ease-in-out;
@@ -186,12 +186,12 @@
 }
 
 .Technology .tools_list .tools_list-item.item-4 {
-    background-color: var(--red);
+    background: linear-gradient(150deg, #cc6060, transparent);
     border-radius: 10px;
 }
 
 .Technology .tools_list .tools_list-item.item-4:hover {
-    background: linear-gradient(150deg, #cc6060, transparent);
+    background: var(--red);
     cursor: pointer;
     transform: translateY(10px);
     transition: all 0.6s ease-in-out;

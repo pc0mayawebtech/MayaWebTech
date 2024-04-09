@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import CardBox from './ServiceCardBox/CardBox';
 import dataanalysis from '../../../assets/Images/analysisdata.webp';
 import UIDesign from '../../../assets/Images/UI-designing.png';
@@ -11,6 +12,9 @@ import Testing from '../../../assets/Images/Testing.webp';
 import Support from '../../../assets/Images/maintain-Support.png';
 import './Service.css';
 const Service = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+})
   return (
     <>
       <section className='ServicetWrapper mb-5'>

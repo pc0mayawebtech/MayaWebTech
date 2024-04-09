@@ -1,5 +1,5 @@
 import './Home.css';
-import { useRef, useState } from 'react';
+import { useRef, useState,useEffect } from 'react';
 import heroBannerVideo from '../../../assets/Videos/HeroBanner3.mp4';
 import about from '../../../assets/Images/about.gif';
 import ServicesCard from './services-card/ServicesCard';
@@ -20,6 +20,10 @@ const Home = () => {
   const setPlayBack = () => {
     videoRef.current.playbackRate = 0.75;
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+})
   return (
     <>
       <section className='HomeWrapper'>

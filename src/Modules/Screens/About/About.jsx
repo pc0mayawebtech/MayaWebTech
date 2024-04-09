@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './About.css';
 import '../Home/Home.css';
 import CompanyWork from '../Home/company-work/CompanyWork';
@@ -9,6 +10,9 @@ import hardWork from '../../../assets/Images/team-member.png';
 import WorkProcess from './WorkProcess/WorkProcess';
 import { Link } from 'react-router-dom';
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+})
   return (
     <>
       <section className='BannerBox'>
