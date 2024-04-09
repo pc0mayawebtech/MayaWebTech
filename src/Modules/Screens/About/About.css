@@ -144,3 +144,11 @@
     font-weight: 600;
     text-transform: uppercase;
 }
+
+/***************MEDIA QUERY SECTION START**************/
+
+@media(max-width:991px) {
+    .ReachOutUs .Connectbtn {
+        width: 60%;
+    }
+}

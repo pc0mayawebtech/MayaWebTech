@@ -11,6 +11,12 @@
     border-radius: 5px;
 }
 
+.contactWay .reachUs:hover{
+    background: linear-gradient(150deg, #cc6060, transparent);
+    transform: scale(1.04);
+    transition: all 0.5s ease-in-out;
+}
+
 .contactWay .reachUs .contactlogo {
     background-color: var(--red);
     height: 65px;

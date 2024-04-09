@@ -38,12 +38,12 @@ const About = () => {
       <section className='ChooseUs mb-5'>
         <div className="container">
           <div className='row'>
-            <div className="col-xxl-6 col-xl-6 col-lg-6">
+            <div className="col-lg-6 col-md-12 col-sm-12 col-12">
               <div className='InnerLogo'>
                 <img src={innerlogo} alt="innerlogo" />
               </div>
             </div>
-            <div className="col-xxl-6 col-xl-6 col-lg-6">
+            <div className="col-lg-6 col-md-12 col-sm-12 col-12">
               <div className='whyChooseSum'>
                 <h2 className='chooseHead'>Why Choose Us?</h2>
               </div>

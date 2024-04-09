@@ -6,7 +6,7 @@ const WorkProcess = () => {
             <div className="row">
                 <div className="col-lg-12">
                     <div className="row ttm-processbox-wrapper">
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mb-5">
                             <div className='ttm-processbox'>
                                 <div className='ttm-box-image'>
                                     <div className='process-num'>
@@ -23,11 +23,11 @@ const WorkProcess = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mb-5">
                             <div className='ttm-processbox'>
                                 <div className='ttm-box-image'>
                                     <div className='process-num'>
-                                        <span className='number'>01</span>
+                                        <span className='number'>02</span>
                                     </div>
                                 </div>
                                 <div className='featured-content'>
@@ -44,7 +44,7 @@ const WorkProcess = () => {
                             <div className='ttm-processbox'>
                                 <div className='ttm-box-image'>
                                     <div className='process-num'>
-                                        <span className='number'>01</span>
+                                        <span className='number'>03</span>
                                     </div>
                                 </div>
                                 <div className='featured-content'>

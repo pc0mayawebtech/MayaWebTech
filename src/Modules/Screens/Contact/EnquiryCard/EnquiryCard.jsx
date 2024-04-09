@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const EnquiryCard = ({ contactlogo, contactmedium, contactMode, connect, mode, needHelp }) => {
     return (
         <>
-            <div className="col-lg-4">
+            <div className="col-lg-4 mb-4">
                 <div className='contactWay'>
                     <div className='reachUs'>
                         <div className='contactlogo'>

@@ -61,11 +61,54 @@
     background-color: var(--red);
 }
 
+.NavBar .icon {
+    display: none;
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+    line-height: 90px;
+    color: #ffffff;
+}
+
 
 /***************MEDIA QUERY START******************/
 
 @media (max-width:991px) {
     .NavBar .NavItems .NavMenu {
         float: none;
+        z-index: 999;
+    }
+
+    .NavBar .icon {
+        display: block;
+    }
+
+    .NavBar .NavMenu .crossicon {
+        color: #ffffff;
+        position: absolute;
+        top: -20px;
+        right: 10px;
+    }
+
+    .NavBar .NavMenu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #6495ED;
+        top: 0px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        padding-top: 50px;
+    }
+
+    .NavBar .NavMenu li {
+        display: block !important;
+        line-height: 70px!important;
+    }
+
+    .NavBar .NavMenu.responsive_nav {
+        left: 0px;
+        z-index: 999;
     }
 }

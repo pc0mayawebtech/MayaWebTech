@@ -1,0 +1,11 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.FooterBanner {
+    background-color: var(--black);
+    padding: 2rem;
+}
