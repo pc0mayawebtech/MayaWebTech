@@ -43,35 +43,35 @@ const Carousel = () => {
 
     return (
         <div className='Testinomial-slides'>
-            <Slider {...settings}>
-                <div className='testinomial'>
-                    <div className='TestiImg'>
-                        <img src={cropuser1} alt="cropuser1" />
+                <Slider {...settings}>
+                    <div className='testinomial'>
+                        <div className='TestiImg'>
+                            <img src={cropuser1} alt="cropuser1" />
+                        </div>
+                        <div className='Innercard'>
+                            <p className='carduser'>John Morgan</p>
+                            <p className='cardCont'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident dicta, animi molestiae quibusdam possimus?</p>
+                        </div>
                     </div>
-                    <div className='Innercard'>
-                        <p className='carduser'>John Morgan</p>
-                        <p className='cardCont'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident dicta, animi molestiae quibusdam possimus?</p>
+                    <div className='testinomial'>
+                        <div className='TestiImg'>
+                            <img src={cropuser2} alt="cropuser2" />
+                        </div>
+                        <div className='Innercard'>
+                            <p className='carduser'>John Morgan</p>
+                            <p className='cardCont'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident dicta, animi molestiae quibusdam possimus?</p>
+                        </div>
                     </div>
-                </div>
-                <div className='testinomial'>
-                    <div className='TestiImg'>
-                        <img src={cropuser2} alt="cropuser2" />
+                    <div className='testinomial'>
+                        <div className='TestiImg'>
+                            <img src={cropuser3} alt="cropuser3" />
+                        </div>
+                        <div className='Innercard'>
+                            <p className='carduser'>John Morgan</p>
+                            <p className='cardCont'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, aliquam ducimus! Atque expedita aspernatur eligendi!</p>
+                        </div>
                     </div>
-                    <div className='Innercard'>
-                        <p className='carduser'>John Morgan</p>
-                        <p className='cardCont'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident dicta, animi molestiae quibusdam possimus?</p>
-                    </div>
-                </div>
-                <div className='testinomial'>
-                    <div className='TestiImg'>
-                        <img src={cropuser3} alt="cropuser3" />
-                    </div>
-                    <div className='Innercard'>
-                        <p className='carduser'>John Morgan</p>
-                        <p className='cardCont'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, aliquam ducimus! Atque expedita aspernatur eligendi!</p>
-                    </div>
-                </div>
-            </Slider>
+                </Slider>
         </div>
     );
 };

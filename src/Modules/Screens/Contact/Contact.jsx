@@ -6,14 +6,14 @@ import EnquiryCard from './EnquiryCard/EnquiryCard';
 const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
-})
+  }, [])
   return (
     <>
       <section className='contactWrapper'>
         <div className='ContactBanner'>
           <div className="row">
             <div className="col-lg-12">
-              <h1 className='contactHead'>Contact Us</h1>
+              <h1 className='contactHead animate__animated animate__zoomInDown animate__delay-1s'>Contact Us</h1>
             </div>
           </div>
         </div>

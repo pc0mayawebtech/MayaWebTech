@@ -1,12 +1,9 @@
-import { useEffect } from 'react';
 import CopyRight from './CopyRight/CopyRight';
 import './Footer.css';
 import UsefulLink from './NavigateRoute/UsefulLink';
 import { Link } from 'react-router-dom';
 const Footer = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [])
+
   return (
     <>
       <footer>
@@ -23,7 +20,7 @@ const Footer = () => {
                   <Link to="https://www.facebook.com/profile.php?id=100094274320325"><i className="fa-brands fa-facebook fa-xl"></i></Link>
                   <Link to=""><i className="fa-brands fa-square-x-twitter fa-xl"></i></Link>
                   <Link to=""><i className="fa-brands fa-pinterest fa-xl"></i></Link>
-                  <Link to=""><i className="fa-brands fa-linkedin fa-xl"></i></Link>
+                  <Link to="https://www.linkedin.com/company/96414344/admin/feed/posts/"><i className="fa-brands fa-linkedin fa-xl"></i></Link>
                 </div>
               </div>
               <UsefulLink link1="/" link2="service" link3="about" link4="contact" title="Quick Links" listlink="Home" listlink2="Services" listlink3="About" listlink4="Contact" icon=<i className='fa-solid fa-angles-right'></i> />

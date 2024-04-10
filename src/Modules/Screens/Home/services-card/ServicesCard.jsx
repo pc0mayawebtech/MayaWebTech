@@ -1,5 +1,6 @@
 import { FastForward } from 'lucide-react';
-import "./ServicesCard.css"
+import "./ServicesCard.css";
+import { Fade } from "react-awesome-reveal";
 
 const ServicesCard = ({ title, content }) => {
     return (
@@ -7,10 +8,12 @@ const ServicesCard = ({ title, content }) => {
             <section className='CardBox'>
                 <div className="container">
                     <div>
-                        <div className='boxCard'>
-                            <h4 className='boxCardHead'><FastForward className='fastIcon' /> {title}</h4>
-                            <p className='boxCardCont'>{content}</p>
-                        </div>
+                        <Fade cascade="true" duration={3000} direction='left'>
+                            <div className='boxCard'>
+                                <h4 className='boxCardHead'><FastForward className='fastIcon' /> {title}</h4>
+                                <p className='boxCardCont'>{content}</p>
+                            </div>
+                        </Fade>
                     </div>
                 </div>
             </section>

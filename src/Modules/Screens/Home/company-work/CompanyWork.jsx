@@ -1,19 +1,24 @@
 import './CompanyWork.css';
-const CompanyWork = ({count,increment,img,worksucess}) => {
+import { Bounce } from "react-awesome-reveal";
+import CountUp from "react-countup";
+const CompanyWork = ({ count, increment, img, worksucess }) => {
     return (
         <div className="col-lg-3 col-md-12 col-sm-12 col-12 mb-4">
-            <section className='BoxBlock'>
-                <div className="container">
-                    <div className='OuterCont'>
-                        <div className='InnerboxCard'>
-                            <span className='boxCardHead'>{count}</span>
-                            <span className='boxCardHead'>{increment}</span>
+            <Bounce>
+                <section className='BoxBlock'>
+                    <div className="container">
+
+                        <div className='OuterCont'>
+                            <div className='InnerboxCard'>
+                                <CountUp duration={8} end={count} className='boxCardHead'></CountUp>
+                                <span className='boxCardHead'>{increment}</span>
+                            </div>
+                            <img src={img} alt="client" />
                         </div>
-                        <img src={img} alt="client" />
+                        <h2 className='clientInfo'>{worksucess}</h2>
                     </div>
-                    <h2 className='clientInfo'>{worksucess}</h2>
-                </div>
-            </section>
+                </section>
+            </Bounce>
         </div>
     )
 }

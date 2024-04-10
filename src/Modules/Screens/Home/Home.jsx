@@ -1,5 +1,5 @@
 import './Home.css';
-import { useRef, useState,useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import heroBannerVideo from '../../../assets/Videos/HeroBanner3.mp4';
 import about from '../../../assets/Images/about.gif';
 import ServicesCard from './services-card/ServicesCard';
@@ -11,6 +11,7 @@ import hardWork from '../../../assets/Images/team-member.png';
 import Testinomial from '../Home/Testinomial/Testinomial';
 import FAQ from '../Home/FAQ/FAQ';
 import { questions } from '../Home/FAQ/api.js';
+import { Fade } from "react-awesome-reveal";
 const Home = () => {
   // eslint-disable-next-line no-unused-vars
   const [data, setData] = useState(questions);
@@ -22,8 +23,9 @@ const Home = () => {
   }
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-})
+    window.scrollTo(0, 0);
+  },[])
+
   return (
     <>
       <section className='HomeWrapper'>
@@ -35,8 +37,8 @@ const Home = () => {
             <div className='row'>
               <div className="col-lg-5">
                 <div className='bannerLeftSide'>
-                  <h1 className='bannerHead'>Global Market Intelligence Consultancy</h1>
-                  <p className='bannerPara'>We can research any market, any company, any topic, anywhere.</p>
+                  <h1 className='bannerHead animate__animated animate__zoomInDown animate__delay-1s'>Global Market Intelligence Consultancy</h1>
+                  <p className='bannerPara animate__animated animate__zoomInDown animate__delay-2s'>We can research any market, any company, any topic, anywhere.</p>
                 </div>
               </div>
               <div className="col-lg-7">
@@ -52,7 +54,8 @@ const Home = () => {
             <div className="row">
               <div className="col-lg-6">
                 <div className='aboutHeadWrapper'>
-                  <h2 className='IntroCompany'>About Us</h2>
+                  <Fade cascade duration={3000} direction='left'>
+                    <h2 className='IntroCompany'>About Us</h2></Fade>
                   <span className='Textdecorate'></span>
                   <h2>India Best Web Designing Company</h2>
                   <p className='CompanyDescript'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed impedit sint, atque, quaerat perferendis in expedita non dolores labore distinctio eius quibusdam ea obcaecati et quod cupiditate hic iste quae!</p>

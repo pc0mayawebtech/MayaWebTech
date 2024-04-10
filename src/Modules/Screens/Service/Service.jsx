@@ -10,18 +10,21 @@ import BackDev from '../../../assets/Images/backend-development.png';
 import Integrate from '../../../assets/Images/TP-Integration.png';
 import Testing from '../../../assets/Images/Testing.webp';
 import Support from '../../../assets/Images/maintain-Support.png';
+import { Bounce } from "react-awesome-reveal";
 import './Service.css';
 const Service = () => {
+
   useEffect(() => {
-    window.scrollTo(0, 0)
-})
+    window.scrollTo(0, 0);
+  });
+
   return (
     <>
       <section className='ServicetWrapper mb-5'>
         <div className='ServiceBanner'>
           <div className="row">
             <div className="col-lg-12">
-              <h1 className='serviceHead'>Services</h1>
+              <h1 className='serviceHead animate__animated animate__zoomInDown animate__delay-1s'>Services</h1>
             </div>
           </div>
         </div>
@@ -47,8 +50,10 @@ const Service = () => {
       <section className='Technology mb-5'>
         <div className='container'>
           <div className='TechWrapper mb-5'>
-            <h2 className='Techhead'>TOOLS & TECHNOLOGIES OUR SOFTWARE DEVELOPERS USE</h2>
-            <p className='TechCont'>Intellectsoft has grown into an international contestant in software engineering with wide-ranging expertise in all the areas needed for reliable software development.</p>
+            <Bounce cascade damping={0.2}>
+              <h2 className='Techhead'>TOOLS & TECHNOLOGIES OUR SOFTWARE DEVELOPERS USE</h2>
+              <p className='TechCont'>Intellectsoft has grown into an international contestant in software engineering with wide-ranging expertise in all the areas needed for reliable software development.</p>
+            </Bounce>
           </div>
 
           <div className='tools_list'>

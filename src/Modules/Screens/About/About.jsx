@@ -9,17 +9,18 @@ import support from '../../../assets/Images/support.png';
 import hardWork from '../../../assets/Images/team-member.png';
 import WorkProcess from './WorkProcess/WorkProcess';
 import { Link } from 'react-router-dom';
+import { Bounce, Slide } from 'react-awesome-reveal';
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
-})
+  }, [])
   return (
     <>
       <section className='BannerBox'>
         <div className='InnerBanner'>
           <div className="row">
             <div className="col-lg-12">
-              <h1 className='aboutHead'>About Us</h1>
+              <h1 className='aboutHead animate__animated animate__zoomInDown animate__delay-1s'>About Us</h1>
             </div>
           </div>
         </div>
@@ -27,17 +28,24 @@ const About = () => {
 
       <section className='heroWrapper mb-5'>
         <div className="container">
+
           <div>
-            <h2 className='digitalWrapper'>Welcome to Maya Web Tech</h2>
-            <p className='WrapperContent'>Your Trusted Partner in Digital World !</p>
+            <Slide cascade damping={1}>
+              <h2 className='digitalWrapper'>Welcome to Maya Web Tech</h2>
+            </Slide>
+            <Slide cascade damping={4}>
+              <p className='WrapperContent'>Your Trusted Partner in Digital World !</p>
+            </Slide>
           </div>
           <div>
-            <p className='abtCompany'>
-              Welcome to Digital Molecule, your trusted partner in Delhi, India since 2012 (Earlier Known as VaMedia Box Pvt Ltd). With 13 years of dedication, we empower businesses through services like Digital Marketing, Website Development, Mobile App Development, Website Maintenance, and Graphic Design. Join us on a journey to transform your brands digital presence. Digital Molecule is more than a service; its an experience, a shared journey towards your goals. Join us as we blend creativity, technology, and strategy to create a unique digital narrative. Welcome to a partnership that exceeds expectations, guiding your brand toward digital success.
-            </p>
+            <Slide cascade damping={6}>
+              <p className='abtCompany'>
+                Welcome to Digital Molecule, your trusted partner in Delhi, India since 2012 (Earlier Known as VaMedia Box Pvt Ltd). With 13 years of dedication, we empower businesses through services like Digital Marketing, Website Development, Mobile App Development, Website Maintenance, and Graphic Design. Join us on a journey to transform your brands digital presence. Digital Molecule is more than a service; its an experience, a shared journey towards your goals. Join us as we blend creativity, technology, and strategy to create a unique digital narrative. Welcome to a partnership that exceeds expectations, guiding your brand toward digital success.
+              </p>
+            </Slide>
           </div>
         </div>
-      </section>
+      </section >
 
       <section className='ChooseUs mb-5'>
         <div className="container">
@@ -49,7 +57,9 @@ const About = () => {
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 col-12">
               <div className='whyChooseSum'>
-                <h2 className='chooseHead'>Why Choose Us?</h2>
+                <Bounce cascade damping={10}>
+                  <h2 className='chooseHead'>Why Choose Us?</h2>
+                </Bounce>
               </div>
               <div className='ListMenu'>
                 <div>
