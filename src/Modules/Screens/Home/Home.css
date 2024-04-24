@@ -26,6 +26,7 @@
 
 .HomeWrapper .elementorSetVideo {
     object-fit: cover;
+    justify-content: center;
 }
 
 .HomeWrapper .bannerLeftSide .bannerHead {
