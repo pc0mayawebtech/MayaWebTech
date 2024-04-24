@@ -3,13 +3,14 @@ import './Contact.css';
 import ContactLogo from '../../../assets/Images/mayaContactUs.jpg';
 import Form from './Form/Form';
 import EnquiryCard from './EnquiryCard/EnquiryCard';
+import connectUs from '../../../assets/Images/ConnctUslogo.png';
 const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
   return (
     <>
-      <section className='contactWrapper'>
+      <section className='contactWrapper mb-5'>
         <div className='ContactBanner'>
           <div className="row">
             <div className="col-lg-12">
@@ -19,17 +20,33 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className='EnquiryMenu'>
+      <section className='ContactUS'>
         <div className="container">
-          <div className='row'>
-            <div className="col-lg-3"></div>
-            <div className="col-lg-6">
-              <div>
-                <h2 className='EnquiryHead'>For any inquiries or assistance, feel free to reach out to us.</h2>
-                <p className='EnquiryCont'>We are dedicated to your needs. Reach out to us for prompt support and solutions.</p>
+          <div className="row">
+            <div className="col-lg-7">
+              <div className='ConnectUs'>
+                <p className='Connect'>Contact Us</p>
+                <h2 className='ConnectSpeech'>Give us a shout. We are all ears.</h2>
               </div>
             </div>
-            <div className="col-lg-3"></div>
+            <div className="col-lg-5">
+              <div>
+                <img src={connectUs} alt="connectUs" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='EnquiryMenu'>
+        <div className="container">
+          <div className='row'>            
+            <div className="col-lg-12">
+              <div>
+                <h2 className='EnquiryHead'>For any inquiries or assistance,<br /> feel free to reach out to us.</h2>
+                <p className='EnquiryCont'>We are dedicated to your needs. Reach out to us for prompt support and solutions.</p>
+              </div>
+            </div>            
           </div>
 
           <div>

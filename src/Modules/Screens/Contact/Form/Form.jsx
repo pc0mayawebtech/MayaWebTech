@@ -16,11 +16,12 @@ const Form = () => {
         Number: "",
     }
 
-    const { values, errors, touched, handleBlur, handleChange, handleSubmit } = useFormik({
+    const { values, errors, touched, handleBlur, handleChange, handleSubmit, resetForm } = useFormik({
         initialValues: initialValues,
         validationSchema: signUpSchema,
-        onSubmit: (values) => {
-            console.log(values);
+        onSubmit: () => {
+            alert("Form is Submitted");
+            resetForm();
         },
     });
     console.log(errors);

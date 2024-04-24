@@ -30,7 +30,7 @@ const Home = () => {
     <>
       <section className='HomeWrapper'>
         <div className='ElementorVideo'>
-          <video ref={videoRef} onCanPlay={() => setPlayBack()} autoPlay muted className='elementorSetVideo' style={{ width: "1342px", height: "550px" }}>
+          <video ref={videoRef} onCanPlay={() => setPlayBack()} autoPlay muted className='elementorSetVideo' style={{ width: "100%", height: "550px" }}>
             <source src={heroBannerVideo} type='video/mp4' />
           </video>
           <div className="container">
